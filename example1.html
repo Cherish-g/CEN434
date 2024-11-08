@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+  </head>
+  <body>
+    <script>
+      // Place JavaScript code here
+      function lastTwoDigitsOfFactorial(n) {
+      let result = 1;
+      for (let i = 1; i <= n; i++) {
+      result = (result * i) % 100; // Keep only the last two digits
+      }
+      return result;
+      }
+
+      // Calculate and log the last two digits of 92!
+      let lastTwoDigits = lastTwoDigitsOfFactorial(92);
+      console.log("The last two digits of 92! are:", lastTwoDigits);
+    </script>
+    <p>
+      This is a javascript file that prints the last two digits of 92!. Check console for results.
+    </p>
+  </body>
+</html>

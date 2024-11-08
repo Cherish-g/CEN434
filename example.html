@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+  </head>
+  <body>
+    <script>
+        // Place JavaScript code here
+        // Array containing numbers from 1 to 10
+      let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // Function to calculate average
+      function calculateAverage(arr) {
+      let sum = arr.reduce((acc, num) => acc + num, 0); // Sum of all numbers
+      return sum / arr.length; // Average
+      }
+
+      // Calculate and log the average
+      let average = calculateAverage(a);
+      console.log("The average of the numbers is:", average);
+    </script>
+
+    <p>
+      This is a javascript file that finds the average of an array of 10 numbers. Check console for results.
+    </p>
+  </body>
+</html>
